@@ -1,0 +1,300 @@
+*, *:before, *:after
+    box-sizing: border-box
+body
+    margin: 0
+    font-family: 'Maven Pro', sans-serif
+    .main
+        color: #fff
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        min-height: 600px
+        background: url('../img/main-bg.png') no-repeat center
+        background-size: cover
+        position: relative
+        .main-overlay
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            opacity: 0.7
+            z-index: 0
+            background-image: -moz-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%)
+            background-image: -webkit-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%)
+            background-image: -ms-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%)
+        .header
+            display: flex
+            justify-content: space-between
+            position: relative
+            z-index: 2
+            width: 90%
+            padding-top: 20px
+            .logo
+                align-self: center
+            .m-menu-link
+                display: none
+                color: #ffffff
+                font-size: 30px
+            .m-menu
+                position: fixed
+                right: 0
+                top: 0
+                margin: 0
+                height: 400px
+                width: 100%
+                list-style: none
+                font-size: 30px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                background: #6e45e2
+                display: flex
+                justify-content: space-around
+                transition: 0.2s
+                transform: translateX(100%)
+            .m-menu-active
+                transform: translateX(0%)               
+                li
+                    display: flex
+                    justify-content: space-between
+                    list-style: none
+                    align-items: center
+                .close-menu
+                    position: fixed
+                    top: 0px
+                    right: 55px
+                    margin: 0
+                    font-size: 60px
+                    &:hover
+                        cursor: pointer
+                .menu-link
+                    color: #fff
+                    text-decoration: none
+                    &:hover
+                        border-bottom: 1px solid #ffffff
+                .get-started-btn
+                    border: 1px solid #fff
+                    padding: 10px 20px
+                    border-radius: 100px
+                    text-transform: uppercase
+                    &:hover
+                        background-color: #6e45e2
+                        cursor: pointer
+                                                        
+        .main-text
+            position: relative
+            z-index: 1
+            text-align: center
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+            span
+                display: inline-block
+                &::before
+                    content: ''
+                    width: 25px
+                    height: 1px
+                    background-color: #fff 
+                    display: inline-block
+                    margin-right: 15px
+                    vertical-align: middle
+                &::after
+                    content: ''
+                    width: 25px
+                    height: 1px
+                    background-color: #fff 
+                    display: inline-block 
+                    margin-left: 15px
+                    vertical-align: middle
+            h1
+                font-size: 80px      
+                margin: 0
+        .main-arrow
+            z-index: 1
+            cursor: pointer
+            padding-bottom: 20px
+            a
+                font-size: 30px
+                background: #ffffff
+                text-decoration: none
+                color: #9fa4af
+                display: flex
+                justify-content: center
+                margin: 0 auto
+                border-radius: 50%
+                width: 45px
+                height: 45px
+                &:hover
+                    box-shadow: 0px 0px 60px 10.12px rgba(204, 204, 223, 0.71)
+                    transition: 0.2              
+    .table
+        min-height: 600px
+        .table-header
+            padding-top: 120px
+            text-align: center
+            span
+                &::before
+                    content: ''
+                    width: 25px
+                    height: 1px
+                    background-color: #6e45e2
+                    display: inline-block 
+                    margin-right: 15px
+                    vertical-align: middle    
+                &::after
+                    content: ''
+                    width: 25px
+                    height: 1px
+                    background-color: #6e45e2
+                    display: inline-block 
+                    margin-left: 15px
+                    vertical-align: middle      
+            .table-subtitle
+                text-transform: uppercase
+                font-size: 14px
+                color: #9fa4af
+            h2
+                color: #4f4f6f
+                font-size: 60px
+                margin: 0
+            p
+                font-size: 16px
+                display: inline-block
+                color: #9fa4af               
+        .price-tags
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            padding-top: 100px
+            padding-bottom: 150px
+            .price-tag
+                border: 1px solid #d7dbe8
+                padding: 20px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                width: 350px
+                text-align: center
+                border-radius: 20px
+                &:hover
+                    cursor: pointer
+                    box-shadow: 0px 0px 60px 10.12px rgba(204, 204, 223, 0.71)
+                    transition: 0.2                   
+                span
+                    font-size: 14px
+                    text-transform: uppercase
+                    padding-top: 60px
+                h4
+                    color: #4f4f4f
+                    font-size: 18px
+                    font-weight: 700px
+                .lorem
+                    line-height: 25px
+                .price-btn
+                    height: 50px
+                    width: 190px
+                    border-radius: 25px
+                    border: none
+                    text-transform: uppercase
+                    font-size: 12px
+                    background-color: #ffffff
+                    border: 1px solid #d7dbe8
+                    &:hover
+                        background-color: #6e45e2
+                        cursor: pointer
+                        color: #ffffff                    
+                    a
+                        text-decoration: none
+                        color: #c2c9db
+                        font-weight: bold
+    .call-to-action
+        background: url('../img/fon.png')
+        background-repeat: no-repeat
+        text-align: center
+        .wrap
+            padding-top: 170px
+            padding-bottom: 150px
+            span
+                font-size: 14px
+                color: #fff
+            h4
+                font-size: 60px
+                color: #fff
+                margin: 0
+                padding-top: 25px
+                padding-bottom: 30px
+            .cta-btn
+                display: inline-block
+                border: none
+                color: #c2c9db
+                height: 50px
+                width: 190px
+                border-radius: 25px
+                background-color: #ffffff
+                text-transform: uppercase
+                font-weight: bold
+                margin-left: 20px
+                margin-right: 20px
+                
+                &:hover
+                    background-color: #6e45e2
+                    cursor: pointer
+    .footer-wrap
+        display: flex
+        justify-content: center
+        .footer
+            width: 90%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-top: 50px
+            padding-bottom: 30px
+            .footer-menu
+                ul
+                    display: flex
+                    justify-content: space-around
+                    list-style: none
+                    a
+                        padding-left: 20px
+                .footer-menu-link
+                    text-decoration: none
+                    color: #6a6a77
+                    font-weight: bold
+                .footer-get-started
+                        border: 1px solid #d7dbe8
+                        padding: 10px 20px
+                        border-radius: 100px
+                        text-transform: uppercase
+                        margin-left: 60px
+                        &:hover
+                            background-color: #6e45e2
+                            color: #ffffff
+    .line
+        display: block
+        width: 90%
+        height: 1px
+        background: #333333
+        margin: 0 auto
+    .legal
+        padding-left: 5%
+        padding-right: 5%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .copy
+            font-size: 14px
+            color: #6a6a77
+        .social-links
+            color: #6a6a77
+            font-size: 20px
+            display: flex
+            a
+                padding-left: 15px
+                color: #b4b4bb
+                &:hover
+                    color: #6e45e2

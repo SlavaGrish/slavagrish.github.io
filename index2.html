@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox project</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-overlay"></div>
+        <div class="header">
+            <div class="logo">
+                <img src="img/Symbol.png" alt="">
+            </div>
+            <a href="" class="m-menu-link">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="m-menu">
+                <li class="close-menu">&times;</li>
+                <li><a href="" class="menu-link">Home</a></li>
+                <li><a href="" class="menu-link">Why MISOCIAL</a></li>
+                <li><a href="" class="menu-link">Features</a></li>
+                <li><a href="" class="menu-link">Articles</a></li>
+                <li><a href="" class="menu-link">Pricing</a></li>
+                <li><a href="" class="menu-link get-started-btn">get started</a></li>
+            </ul>
+            <div class="menu visible-lg">
+
+            </div>
+        </div>
+        <div class="main-text">
+            <span>SOCIAL MARKETING & ANALYTICS</span>
+            <h1>Pricing Table</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do eiusmod tempor incididunt ut.</p>
+        </div>
+        <div class="main-arrow">
+            <a href="#select">&darr;</a>
+        </div>
+    </div>
+
+    <div class="table" id="select">
+        <div class="table-header">
+            <span class="table-subtitle">MIsocial</span>
+            <h2>Select a Plan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Harum, facere?</p>
+        </div>
+        <div class="price-tags">
+            <div class="price-tag">
+                <img src="img/Asset.png" alt="">
+                <span>personal</span>
+                <h4><sup>$</sup>0/moth</h4>
+                <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa expedita maiores nisi quod fugiat, 
+                    tempore eligendi nihil, quasi officia sit dolorem, repellat error provident tenetur sed.
+                     Vitae dignissimos nulla error.</p>
+                <button class="price-btn"><a href="">select plan</a></button>
+            </div>
+            <div class="price-tag">
+                <img src="img/Asset 2.png" alt="">
+                <span>personal</span>
+                <h4><sup>$</sup>29/moth</h4>
+                <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa expedita maiores nisi quod fugiat, 
+                    tempore eligendi nihil, quasi officia sit dolorem, repellat error provident tenetur sed.
+                     Vitae dignissimos nulla error.</p>
+                <button class="price-btn"><a href="">select plan</a></button>
+            </div>
+            <div class="price-tag">
+                <img src="img/Asset 3.png" alt="">
+                <span>personal</span>
+                <h4><sup>$</sup>49/moth</h4>
+                <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa expedita maiores nisi quod fugiat, 
+                    tempore eligendi nihil, quasi officia sit dolorem, repellat error provident tenetur sed.
+                     Vitae dignissimos nulla error.</p>
+                <button class="price-btn"><a href="">select plan</a></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="call-to-action">
+        <div class="wrap">
+            <span>SOCAL MARKETING & ANALYTICS </span>
+            <h4>Take control of your data</h4>
+            <button class="cta-btn">get started</button>
+            <button class="cta-btn">explore features</button
+        </div>
+        </div>
+    </div>
+    <div class="footer-wrap">
+        <div class="footer">
+            <div class="logo">
+                <img src="img/Symbol2.png" alt=""> 
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="" class="footer-menu-link">Home</a></li>
+                    <li><a href="" class="footer-menu-link">Why MISOCIAL</a></li>
+                    <li><a href="" class="footer-menu-link">Features</a></li>
+                    <li><a href="" class="footer-menu-link">Articles</a></li>
+                    <li><a href="" class="footer-menu-link">Pricing</a></li>
+                    <li><a href="" class="footer-menu-link footer-get-started">get started</a></li>
+                </ul>               
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="legal">
+        <div class="copy">
+            <p>© 2017 Mass Impressions & Tranmautritam. Make the right impression.</p>
+        </div>
+        <div class="social-links">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var link = $('.m-menu-link');
+        var menu = $('.m-menu');
+        var close = $('.close-menu')
+        link.on('click', function(event){
+            event.preventDefault();
+            menu.toggleClass('m-menu-active');
+        });
+        close.on('click', function(event){
+            event.preventDefault();
+            menu.toggleClass('m-menu-active');
+        });
+    });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
